@@ -1,6 +1,6 @@
 ##Project struct
 
-traffic_sign_detection/
+```traffic_sign_detection/
 ├── data/
 │   └── model/
 │       ├── resnet34_gtsrb.onnx
