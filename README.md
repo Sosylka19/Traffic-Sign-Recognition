@@ -1,4 +1,4 @@
-##Project struct
+## Project struct
 
 ```traffic_sign_detection/
 ├── data/
