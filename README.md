@@ -1,5 +1,11 @@
 ## Project struct
 
+
+НАПИСАТЬ полный план как проходило обучение по дням
+Чуваку нужно скачать qt, onnx, docker
+
+дока к скачиванию инференса:https://github.com/ultralytics/ultralytics/blob/main/examples/YOLOv8-ONNXRuntime-CPP/README.md
+
 ```traffic_sign_detection/
 ├── data/
 │   └── model/
@@ -16,7 +22,7 @@
 │   ├──               
 │   └──        
 │    
-├── db/
+├── db/5
 │   ├──               
 │   └──      
 │
@@ -28,4 +34,6 @@
 │   └── notebook(eda & whole cnn).ipynb    
 │
 ├── requirements.txt
-└── README.md                  
+└── README.md  
+
+### Download OnnxRuntime
