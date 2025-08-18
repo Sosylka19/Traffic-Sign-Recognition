@@ -37,3 +37,11 @@ dist/
 
 .env
 *.env
+
+backend/app/postgres-data
+inference_yolov8n/build
+qt/sign-detection/build
+inference_yolov8n/CMakeFiles/
+ml_core/ml_resnet34/
+qt/sign-detection/.qt
+qt/sign-detection/.lupdate

@@ -1,5 +1,3 @@
-// Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
-
 #include "inference.h"
 #include <regex>
 
@@ -61,7 +59,8 @@ char* YOLO_V8::PreProcess(cv::Mat& iImg, std::vector<int> iImgSize, cv::Mat& oIm
     case YOLO_DETECT_V8:
     case YOLO_POSE:
     case YOLO_DETECT_V8_HALF:
-    case YOLO_POSE_V8_HALF://LetterBox
+    //Letter box
+    case YOLO_POSE_V8_HALF:
     {
         if (iImg.cols >= iImg.rows)
         {
@@ -78,7 +77,8 @@ char* YOLO_V8::PreProcess(cv::Mat& iImg, std::vector<int> iImgSize, cv::Mat& oIm
         oImg = tempImg;
         break;
     }
-    case YOLO_CLS://CenterCrop
+    //Crop
+    case YOLO_CLS:
     {
         int h = iImg.rows;
         int w = iImg.cols;
@@ -240,9 +240,6 @@ char* YOLO_V8::TensorProcess(clock_t& starttime_1, cv::Mat& iImg, N& blob, std::
             rawData = cv::Mat(signalResultNum, strideNum, CV_16F, output);
             rawData.convertTo(rawData, CV_32F);
         }
-        // Note:
-        // ultralytics add transpose operator to the output of yolov8 model.which make yolov8/v5/v7 has same shape
-        // https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8n.pt
         rawData = rawData.t();
 
         float* data = (float*)rawData.data;
