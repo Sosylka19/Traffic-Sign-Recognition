@@ -2,9 +2,11 @@
 
 ### Description
 
+App for detect `Traffic signs: speed limits, traffic lights`
+
+![example.png](https://github.com/Sosylka19/traffic-sign-detection/blob/ml_core/example.png)
 
 ### Getting started
-
 
 #### 1. Prerequisities
 
@@ -26,7 +28,7 @@
 2. Copy repo
 
     ```bash
-    git clone https://github.com/Sosylka19/Traffic-Sign-Recognition.git
+    git clone https://github.com/Sosylka19/traffic-sign-detection.git
     ```
 
 3. Move to the project directory
@@ -34,7 +36,9 @@
     cd traffic-sign-detection
     ```
 
-3.  Start the project
+4. Start the Docker Desktop, it will require to pass the password from system(docker demon work with sudo)
+
+5.  Start the project
     ```bash
     make
     ```
