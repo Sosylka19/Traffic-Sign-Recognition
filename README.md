@@ -21,7 +21,7 @@
 1. Make directory for project
 
     ```bash
-    mkdir sign_detecion && cd sign_detection
+    mkdir sign_detection && cd sign_detection
     ``` 
 2. Copy repo
 
