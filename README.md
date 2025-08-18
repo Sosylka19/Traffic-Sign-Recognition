@@ -22,11 +22,16 @@
 
     ```bash
     mkdir sign_detection && cd sign_detection
-    ``` 
+    ```  
 2. Copy repo
 
     ```bash
     git clone https://github.com/Sosylka19/Traffic-Sign-Recognition.git
+    ```
+
+3. Move to the project directory
+    ```
+    cd traffic-sign-detection
     ```
 
 3.  Start the project
