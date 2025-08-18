@@ -1,0 +1,19 @@
+# Игнорируем Jupyter Notebooks в статистике
+*.ipynb linguist-detectable=false
+
+# Принудительно указываем языки
+*.py linguist-language=Python
+*.cpp linguist-language=C++
+*.h linguist-language=C++
+*.hpp linguist-language=C++
+
+# CMake
+CMakeLists.txt linguist-language=CMake
+*.cmake linguist-language=CMake
+
+# Дополнительно (если нужно)
+*.qrc linguist-language=XML
+*.ui  linguist-language=XML
+*.json linguist-language=JSON
+*.yml linguist-language=YAML
+*.yaml linguist-language=YAML
