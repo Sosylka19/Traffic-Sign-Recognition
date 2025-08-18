@@ -5,6 +5,7 @@ __pycache__/
 venv/
 env/
 .venv/
+.env/
 
 .ipynb_checkpoints/
 
@@ -34,8 +35,6 @@ build/
 dist/
 *.egg-info/
 
-.env
-*.env
 
 backend/app/postgres-data
 inference_yolov8n/build
